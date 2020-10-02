@@ -5135,11 +5135,11 @@ a:focus {
 }
 
 .calendar__slider .slick-prev {
-  background-image: url(/images/l.png?a121cc7279ee526f0328ce56fd63d64f);
+  background-image: url(../images/l.png);
 }
 
 .calendar__slider .slick-next {
-  background-image: url(/images/r.png?b122317025438f97229fbbe03e4268c7);
+  background-image: url(../images/r.png);
 }
 
 .calendar__wrap {
