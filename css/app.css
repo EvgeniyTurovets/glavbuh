@@ -5221,6 +5221,12 @@ a:focus {
   .curs__wrap {
     padding: 15px;
   }
+  
+}
+@media(max-width: 424px){
+  .curs__item{
+    font-size: 12px;
+  }
 }
 .centerrow {
   margin-bottom: 25px;
