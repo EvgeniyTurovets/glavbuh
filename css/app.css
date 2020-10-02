@@ -5217,7 +5217,11 @@ a:focus {
 .curs__wrap {
   padding: 30px;
 }
-
+@media(max-width: 450px){
+  .curs__wrap {
+    padding: 15px;
+  }
+}
 .centerrow {
   margin-bottom: 25px;
 }
