@@ -5504,3 +5504,32 @@ a:focus {
   margin-right: 0;
   padding: 15px;
 }
+
+.otchet .breadcrumb{
+  border-bottom: 1px solid #c2c2c2;
+}
+.otchet__wrap {
+  padding: 15px;
+}
+.otchet__wrap a{
+  display: flex;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+.otchet__wrap a i{
+  margin-right: 5px;
+}
+
+.otchet__wrap a:hover i{
+  text-decoration: none;
+}
+
+.otchet__wrap a:hover span{
+  text-decoration: underline;
+}
+
+@media(max-width: 767px){
+  .otchet__wrap a{
+    margin-bottom: 15px;
+  }
+}
