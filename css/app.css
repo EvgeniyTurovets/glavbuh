@@ -4777,7 +4777,7 @@ a:focus {
 
 .main {
   position: relative;
-  min-height: 100vw;
+  min-height: 100%;
   background-color: #f2f2f2;
   width: 100%;
   max-width: 1920px;
