@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Laravel</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" crossorigin="anonymous">
+
+        <!-- Styles -->
+        <link href="./css/app.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="main">
+
+            <!-- sidebar -->
+            <div class="sidebar">
+                <div class="logo">
+                    <img src="./img/1c-logo.png">
+                </div>
+
+                <ul class="sidebar__menu">
+                   <li><a href=""><i class="fas fa-home"></i>Главная</a></li> 
+                   <li><a href=""><i class="fas fa-database"></i>Нормативная база</a></li> 
+                   <li><a href=""><i class="fas fa-donate"></i>Налоговоя система</a></li> 
+                   <li><a href=""><i class="fas fa-balance-scale-left"></i>Консультации и аналитика</a></li> 
+                   <li><a href=""><i class="fas fa-file-invoice"></i>Отчетность</a></li> 
+                   <li><a href=""><i class="fas fa-receipt"></i>Формы и бланки</a></li>
+                   <li><a href=""><i class="fas fa-book"></i>Справочники</a></li> 
+                </ul>
+
+                <ul class="sidebar__menu">
+                   <li><a href=""><i class="far fa-newspaper"></i>Новости</a></li> 
+                   <li><a href=""><i class="fab fa-leanpub"></i>Опубликовано на сайте</a></li> 
+                   <li><a href=""><i class="far fa-calendar-alt"></i>Календарь бухгалтера</a></li> 
+                   <li><a href=""><i class="fas fa-chart-line"></i>Курс валют ЦБР</a></li> 
+                   <li><a href=""><i class="fas fa-link"></i>Полезные ссылки</a></li> 
+                </ul>
+
+                <ul class="sidebar__menu">
+                   <li><a href=""><i class="fas fa-file-signature"></i>Пользовательськое соглашение</a></li> 
+                   <li><a href=""><i class="far fa-file-word"></i>Договор на оказание услуг</a></li> 
+                   <li><a href=""><i class="fas fa-file-invoice"></i>Публичный договор</a></li> 
+                </ul>
+            </div>
+            <!-- sidebar -->
+
+            <div class="w_content">
+                <div class="mob-top">
+                    <div class="burger">
+                        <i class="fas fa-bars burger-open"></i>
+                        <i class="fas fa-times burger-close"></i>
+                    </div>
+                    <div class="login">
+                        <a class="" href=""><span>Вход</span><img src="./img/user.png"></a>
+                    </div>
+                </div>
+                <div class="top-line">
+                    <div class="container-fluid">
+                        <div class="row">
+
+                            <div class="col-6">
+                                <ul class="top-line__menu">
+                                    <li><a href="">Помощь</a></li>
+                                    <li><a href="">Контакты</a></li>
+                                    <li><a href="">Задать вопрос</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-xl-3 col-4">
+                                <div class="spravka" >
+                                    <div>Справка - </div>
+                                    <div>
+                                        <a href="tel:0713301683">  071 330 16 83</a>
+                                        <a href="tel:0713301683">testemail@gmail.com</a>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="col-xl-3 col-2">
+                                <div class="login">
+                                    <a class="" href=""><span>Вход</span><img src="./img/user.png"></a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news otchet">
+                    
+                    <ul class="breadcrumb">
+                        <li><a href="">Главная</a></li>
+                        <li><a href="">Нормативная база</a></li>
+                        <li><a href="">Указы</a></li>
+                        <li><a>Указ</a></li>
+                    </ul>
+
+                    <div class="blocktitle">Указы</div>
+
+                    <div class="ukaz__wrap">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Наименование</td>
+                                    <td>Номер</td>
+                                    <td>ДАТА</td>
+                                    <td>Статус</td>
+                                    <td>Дата опубликования</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="ukaz_text-td">
+                                       <div class="ukaz__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua</div>
+                                       <div class="ukaz__text">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        
+                                        </div> 
+                                    </td>
+                                    <td>
+                                        297
+                                    </td>
+                                    <td>
+                                        25.08.2020
+                                    </td>
+                                    <td>
+                                        <div class="status">
+                                            <span style="background-color: #167bc1;"></span>
+                                            Действует
+                                        </div>
+                                    </td>
+                                    <td>
+                                        25.08.2020
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="ukaz_text-td">
+                                       <div class="ukaz__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua</div>
+                                       <div class="ukaz__text">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        
+                                        </div> 
+                                    </td>
+                                    <td>
+                                        297
+                                    </td>
+                                    <td>
+                                        25.08.2020
+                                    </td>
+                                    <td>
+                                        <div class="status">
+                                            <span style="background-color: #b24545;"></span>
+                                            Утратил силу
+                                        </div>
+                                    </td>
+                                    <td>
+                                        25.08.2020
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="ukaz_text-td">
+                                       <div class="ukaz__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua</div>
+                                       <div class="ukaz__text">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        
+                                        </div> 
+                                    </td>
+                                    <td>
+                                        297
+                                    </td>
+                                    <td>
+                                        25.08.2020
+                                    </td>
+                                    <td>
+                                        <div class="status">
+                                            <span style="background-color: #167bc1;"></span>
+                                            Действует
+                                        </div>
+                                    </td>
+                                    <td>
+                                        25.08.2020
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tfoot></tfoot>
+                        </table>
+                    </div>
+                    
+                </div>
+
+                <div class="contact">
+                    <div>Социальные сети</div>
+                    <div class="contact__wrap">
+                        <a href=""><img src="./img/vk.png"></a>
+                    </div>
+                    <p>© 2016-2020 "Главбух" Электроно информационое издание</p>
+                </div>
+            </div>
+
+        </div>
+
+    <!-- Script -->
+    <script src="./js/jquery-3.2.1.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/app.js"></script>
+    </body>
+</html>
