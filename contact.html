@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Laravel</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" crossorigin="anonymous">
+
+        <!-- Styles -->
+        <link href="./css/fancybox.css" rel="stylesheet">
+        <link href="./css/app.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="main">
+
+            <!-- sidebar -->
+            <div class="sidebar">
+                <div class="logo">
+                    <img src="./img/1c-logo.png">
+                </div>
+
+                <ul class="sidebar__menu">
+                   <li><a href=""><i class="fas fa-home"></i>Главная</a></li> 
+                   <li><a href=""><i class="fas fa-database"></i>Нормативная база</a></li> 
+                   <li><a href=""><i class="fas fa-donate"></i>Налоговоя система</a></li> 
+                   <li><a href=""><i class="fas fa-balance-scale-left"></i>Консультации и аналитика</a></li> 
+                   <li><a href=""><i class="fas fa-file-invoice"></i>Отчетность</a></li> 
+                   <li><a href=""><i class="fas fa-receipt"></i>Формы и бланки</a></li>
+                   <li><a href=""><i class="fas fa-book"></i>Справочники</a></li> 
+                </ul>
+
+                <ul class="sidebar__menu">
+                   <li><a href=""><i class="far fa-newspaper"></i>Новости</a></li> 
+                   <li><a href=""><i class="fab fa-leanpub"></i>Опубликовано на сайте</a></li> 
+                   <li><a href=""><i class="far fa-calendar-alt"></i>Календарь бухгалтера</a></li> 
+                   <li><a href=""><i class="fas fa-chart-line"></i>Курс валют ЦБР</a></li> 
+                   <li><a href=""><i class="fas fa-link"></i>Полезные ссылки</a></li> 
+                </ul>
+
+                <ul class="sidebar__menu">
+                   <li><a href=""><i class="fas fa-file-signature"></i>Пользовательськое соглашение</a></li> 
+                   <li><a href=""><i class="far fa-file-word"></i>Договор на оказание услуг</a></li> 
+                   <li><a href=""><i class="fas fa-file-invoice"></i>Публичный договор</a></li> 
+                </ul>
+            </div>
+            <!-- sidebar -->
+
+            <div class="w_content">
+                <div class="mob-top">
+                    <div class="burger">
+                        <i class="fas fa-bars burger-open"></i>
+                        <i class="fas fa-times burger-close"></i>
+                    </div>
+                    <div class="login">
+                        <a class="" href=""><span>Вход</span><img src="./img/user.png"></a>
+                    </div>
+                </div>
+                <div class="top-line">
+                    <div class="container-fluid">
+                        <div class="row">
+
+                            <div class="col-6">
+                                <ul class="top-line__menu">
+                                    <li><a href="">Помощь</a></li>
+                                    <li><a href="">Контакты</a></li>
+                                    <li><a href="">Задать вопрос</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-xl-3 col-4">
+                                <div class="spravka" >
+                                    <div>Справка - </div>
+                                    <div>
+                                        <a href="tel:0713301683">  071 330 16 83</a>
+                                        <a href="tel:0713301683">testemail@gmail.com</a>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="col-xl-3 col-2">
+                                <div class="login">
+                                    <a class="" href=""><span>Вход</span><img src="./img/user.png"></a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news otchet-d">
+                    
+                    <ul class="breadcrumb">
+                        <li><a href="">Главная</a></li>
+                        <li><a>Контакты</a></li>
+                    </ul>
+
+                </div>
+                <div class="contact-page">
+                    <h1 class="help-title">Контакты</h1>
+                    <div class="contact-page__wrap">
+                        <h2>Задайте вопрос</h2>
+                        <p>
+                            У Вас есть вопрос по работе с базой данных? Заполните форму и нажмите кнопку <b>Отправить</b>. Мы постараемся ответить максимально быстро.
+                          </p>
+                          <form class="contact-page-form js-validate">
+                            <input type="hidden" name="sform" value="1">
+                            <div class="row">
+                              <div class="col-sm-4">
+                                <div class="form-group">
+                                  <label class="control-label">Ваше имя <span class="text-danger">*</span></label>
+                                  <input type="text" name="formname" value="" class="form-control"  data-validation-error-msg="Поле должно быть заполнено" required>
+                                </div>
+                              </div>
+                              <div class="col-sm-4">
+                                <div class="form-group">
+                                  <label class="control-label">E-mail <span class="text-danger">*</span></label>
+                                  <input type="text" name="formemail" value="" class="form-control" data-validation-error-msg="Поле должно быть заполнено" required>
+                                </div>
+                              </div>
+                              <div class="col-sm-4">
+                                <div class="form-group">
+                                  <label class="control-label">Телефон</label>
+                                  <input type="text" name="formphone" value="" class="form-control" required>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label class="control-label">Тематика вопроса:</label>
+                              <select name="formquestionto" class="form-control">
+                                <optgroup label="Отдел продаж">
+                                  <option value="Подобрать тарифный план">Подобрать тарифный план</option>
+                                  <option value="Продление лицензии">Продление лицензии</option>
+                                  <option value="Как оплатить?">Как оплатить?</option>
+                                  <option value="Запрос специальных условий">Запрос специальных условий</option>
+                                  <option value="Подобрать документы по теме">Подобрать документы по теме</option>
+                                  <option value="Свой вопрос (комментарий)">Свой вопрос (комментарий)</option>
+                                </optgroup>
+                                <optgroup label="Техническая поддержка">
+                                  <option value="Не могу найти документ">Не могу найти документ</option>
+                                  <option value="Система не принимает мой пароль">Система не принимает мой пароль</option>
+                                  <option value="Я забыл пароль, что делать?">Я забыл пароль, что делать?</option>
+                                  <option value="Ошибка в базе данных!">Ошибка в базе данных!</option>
+                                  <option value="Свой вопрос (комментарий)">Свой вопрос (комментарий)</option>
+                                </optgroup>
+                              </select>
+                            </div>
+                            <div class="form-group">
+                              <label class="control-label">Ваше сообщение (вопрос)</label>
+                              <textarea class="form-control" name="formquestion" rows="6" data-validation-error-msg required></textarea>
+                            </div>
+              
+                            <div class="b-well__actions">
+                              <button type="submit" class="blue-btn">Отправить</button>
+                            </div>
+                          </form>
+                          <div class="contact-susses">
+                              Спасибо! Ваше сообщение отправлено.
+                             
+                          </div>
+                    </div>
+                </div>
+                <div class="contact">
+                    <div>Социальные сети</div>
+                    <div class="contact__wrap">
+                        <a href=""><img src="./img/vk.png"></a>
+                    </div>
+                    <p>© 2016-2020 "Главбух" Электроно информационое издание</p>
+                </div>
+                
+            </div>
+
+        </div>
+
+    <!-- Script -->
+  
+    <script src="./js/jquery-3.2.1.js"></script>
+    <script src="./js/fancybox.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/app.js"></script>
+    </body>
+</html>
