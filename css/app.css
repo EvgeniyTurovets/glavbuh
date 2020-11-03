@@ -5885,3 +5885,37 @@ a:focus {
     padding-top: 50px;
   }
 }
+.news-d{
+  background-color: #fff;
+}
+.news-d-t{
+  padding: 15px;
+  font-weight: 600;
+  border-top: 1px solid #c2c2c2;
+  border-bottom: 1px solid #c2c2c2;
+}
+.news-d-t h1{
+  font-size: 18px;
+}
+.news-d-t div{
+  margin-top: 15px;
+  font-weight: 400;
+}
+.news-d-tags{
+  padding: 15px;
+  border-top: 1px solid #c2c2c2;
+  display: flex;
+}
+.news-d-tags__wrap{
+  margin-left: 25px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.news-d-tags__wrap a{
+  color: #167bc1;
+  display: inline-block;
+  margin-right: 25px;
+}
+.news-d-wrap{
+  padding: 15px;
+}
