@@ -74,17 +74,15 @@ $(function () {
     }
   })
   if($('.js-validate').length){
-    $(".js-validate").validate();
+    $(".js-validate").validate({
+      submitHandler: function(form) {
+        $('.contact-page-form').fadeOut()
+        $('.contact-susses').fadeIn()
+        return false;
+      }
+    });
     $.validator.messages.required = "Поле должно быть заполнено";
   }
-
-  $('.contact-page-form').submit(function(){
-    $(this).fadeOut()
-    $('.contact-susses').fadeIn()
-    return false;
-  })
-  
-  
 });
 
 
