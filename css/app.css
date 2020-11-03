@@ -5871,6 +5871,11 @@ a:focus {
 .help__content.active{
   display: block;
 }
+@media(max-width: 991px){
+  .help-wrap{
+    max-width: 100%;
+  }
+}
 @media(max-width: 767px){
   .help-wrap .row{
     flex-direction: column-reverse;
