@@ -42,17 +42,38 @@ $(function () {
     $('#'+$itemId+'').addClass('active')
     $('#'+$itemId+'').find('.tab').eq(0).click()
   })
-
-
-  $(function() {
   
-    $('ul.tabs__caption').on('click', 'li:not(.active)', function() {
-      $(this)
-        .addClass('active').siblings().removeClass('active')
-        .closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
-    });
-    
+  $('ul.tabs__caption').on('click', 'li:not(.active)', function() {
+    $(this)
+      .addClass('active').siblings().removeClass('active')
+      .closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
   });
+    
+  //страница "помощь"
+  $('.help__content').eq(0).addClass('active')
+  $('.help__right__item').eq(0).addClass('active')
+  let countElem = $('.help__right__item').length
+  for(let i = 0; i < countElem; i++ ){
+    $('.help__right__item').eq(i).attr('data-index', i);
+  }
+
+  $('.help__right__item').click(function(){
+    if($(this).hasClass('active')){
+      return false
+    }else{
+      $('.help__right__item').removeClass('active')
+      $(this).addClass('active')
+      let thisIndex = $(this).attr('data-index')
+      $('.help__content').removeClass('active')
+      $('.help__content').eq(thisIndex).addClass('active')
+      if($(window).width() < 768){
+        $('html, body').animate({
+            scrollTop: $('.help__left').offset().top  // класс объекта к которому приезжаем
+        }, 300);
+      }
+    }
+  })
+  
 });
 
 

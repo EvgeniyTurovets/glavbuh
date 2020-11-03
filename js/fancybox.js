@@ -73,7 +73,7 @@
     buttons: [
       "zoom",
       //"share",
-      "slideShow",
+      // "slideShow",
       //"fullScreen",
       //"download",
       "thumbs",
