@@ -5529,6 +5529,10 @@ a:focus {
   display: flex;
   margin-bottom: 10px;
   text-decoration: none;
+  font-weight: 600;
+}
+.otchet__wrap a:hover span{
+  color: #0e4f7c;
 }
 .otchet__wrap a i{
   margin-right: 5px;
@@ -5740,16 +5744,23 @@ a:focus {
 	padding:0px;
 	cursor:pointer;
 	display:block;
-	padding:10px 0px;
+	
   width: 25%;
-  border: 1px solid #f2f2f2;
+
   text-align: center;
 }
-.tabs ul li.active{
+.tabs ul li a{
+  padding:10px 0px;
+  display: block;
+  border: 1px solid #f2f2f2;
+}
+.tabs ul li a:hover{
   background:#167bc1;
   border: 1px solid #167bc1;
-	color:#fff;
+  color:#fff;
+  text-decoration: none;
 }
+
 .tabs > div{
   margin-top: 25px;
   border-top: 1px solid #f7f4f4;
