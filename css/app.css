@@ -6035,6 +6035,9 @@ a:focus {
   border-color: #167bc1;
   outline: 0;
 }
+.contact-page__wrap a{
+  color: #167bc1;
+}
 .form-control:focus {
   border-color: #167bc1;
   outline: 0;
@@ -6060,4 +6063,61 @@ a:focus {
   border-left-width: 3px;
   border-left-style: solid;
   padding: 15px 10px;
+}
+
+
+/*архив*/
+.arhiv-select{
+  width: 200px;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+.arhiv__wrap{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -7px;
+  padding: 0 15px;
+  margin-top: 15px;
+}
+.arhiv__item{
+  width: calc(100% / 3 - 14px);
+  margin: 0 7px;
+  margin-bottom: 14px;
+}
+.arhiv__item__top{
+  background-color: #167bc1;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+}
+.arhiv__item__bot{
+  border: 1px solid #c2c2c2;
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+}
+.arhiv__item__bot div{
+  font-weight: 600;
+  margin: 0 10px;
+}
+.arhiv__item__bot span{
+  font-weight: 400;
+  padding-left: 5px;
+}
+@media(max-width: 1279px){
+  .arhiv__item__bot div{
+    margin: 0 5px;
+  }
+}
+@media(max-width: 1169px){
+  .arhiv__item{
+    width: calc(100% / 2 - 14px);
+  }
+}
+@media(max-width: 767px){
+  .arhiv__item{
+    width: calc(100% - 14px);
+  }
 }

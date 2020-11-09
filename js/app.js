@@ -79,6 +79,9 @@ $(function () {
     });
     $.validator.messages.required = "Поле должно быть заполнено";
   }
+
+  //архив валют
+  $('.select').selectric()
 });
 
 
