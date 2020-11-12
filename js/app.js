@@ -42,9 +42,9 @@ $(function () {
     $('#'+$itemId+'').addClass('active')
     $('#'+$itemId+'').find('.tab').eq(0).click()
   })
-  
 
-    
+
+
   //страница "помощь"
   $('.help__content').eq(0).addClass('active')
   $('.help__right__item').eq(0).addClass('active')
@@ -78,11 +78,17 @@ $(function () {
       }
     });
     $.validator.messages.required = "Поле должно быть заполнено";
+    $.validator.messages.minlength = "Пожалуйста введите минимум 8 символов"
   }
 
   //архив валют
-  $('.select').selectric()
+  if( $('.select').length ){
+      $('.select').selectric()
+  }
+
+  $('.slideCheckbox').on("change", function() {
+        $('.js-usertype input').attr('required') ?
+        $('.js-usertype input').removeAttr('required') : $('.js-usertype input').attr('required', 'true');
+        $('.js-usertype').slideToggle();
+    });
 });
-
-
-
