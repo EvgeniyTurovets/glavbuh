@@ -4816,8 +4816,8 @@ a:focus {
 .logo {
     width: 100px;
     margin: 0 auto;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
 }
 
 .sidebar__menu {
@@ -4877,7 +4877,22 @@ a:focus {
 .top-line__menu {
     display: flex;
 }
-
+.top-line__help{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.top-line__help__btn{
+    background-color: #167bc1;
+    padding: 10px 20px;
+    color: #fff;
+    border: 0;
+    transition: 0.3s;
+    margin-top: 5px;
+}
+.top-line__help button:hover{
+    opacity: 0.9;
+}
 .top-line__menu li {
     list-style: none;
 }
@@ -4914,14 +4929,62 @@ a:focus {
 .login {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
 }
-
+.vhod{
+    background-color: #f2f2f2;
+    padding: 15px 30px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.35) inset;
+}
+.vhod .login{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.vhod .vhod__text{
+    margin-top: 15px;
+    max-width: 500px;
+}
+.vhod .vhod__text a{
+    color: #167bc1;
+    text-decoration: underline;
+}
 .login img {
     width: 32px;
     height: 32px;
-    margin-left: 10px;
+    margin-right: 10px;
 }
+.mob-top .login img{
+    margin-right: 0;
+    margin-left: 10px;
+
+}
+
+.vhod-btn1{
+    background-color: #167bc1;
+    padding: 10px 20px;
+    color: #fff;
+    margin-right: 10px;
+    transition: 0.3s all;
+}
+.vhod__dostup{
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.vhod-btn1:hover{
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.9;
+}
+.vhod-btns{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
+.vhod-btns a{
+    display: block;
+}
+
+
 
 .slider-top .slick-dots {
     position: absolute;
