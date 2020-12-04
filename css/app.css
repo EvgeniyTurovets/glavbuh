@@ -6410,3 +6410,14 @@ a:focus {
 .log-page .contact-warn, .log-page .contact-susses{
     margin-bottom: 15px;
 }
+
+.oglavlenie{
+    font-size: 18px;
+    padding: 10px 15px;
+    text-transform: uppercase;
+}
+@media(max-width: 1199px){
+    .oglavlenie{
+        padding: 10px 5px;
+    }
+}
