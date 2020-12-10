@@ -5872,12 +5872,12 @@ a:focus {
 
 /* Handle */
 .otchet__tree::-webkit-scrollbar-thumb {
-    background: #00133a;
+    background: #167bc1;
 }
 
 /* Handle on hover */
 .otchet__tree::-webkit-scrollbar-thumb:hover {
-    background: #00133a;
+    background: #167bc1;
 }
 
 .otchet__item {
@@ -6419,5 +6419,215 @@ a:focus {
 @media(max-width: 1199px){
     .oglavlenie{
         padding: 10px 5px;
+    }
+}
+
+
+.calendar__top{
+    display: flex;
+    justify-content: space-between;
+}
+.calendra__table{
+    margin-top: 15px;
+    border-top: 1px solid #dad9d9;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #dad9d9;
+}
+.calendra__table table{
+    width: 100%;
+}
+.calendra__table table td{
+    color: #dad9d9;
+}
+.calendra__table .vihodnoi{
+    color: #ff0000;
+}
+.calendra__table .link{
+    background-color: #167bc1;
+    color: #fff;
+    position: relative;
+}
+.calendra__table .link:hover a{
+    text-decoration: none;
+}
+.calendra__table .link a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.calendra__table td{
+    text-align: center;
+    padding: 5px;
+}
+.calendra__table td{
+    width: 20px;
+    height: 30px;
+}
+.calendar__text{
+    padding-top: 15px;
+    border-bottom: 1px solid #dad9d9;
+}
+
+.calendar__text__bot{
+    padding: 15px 0;
+}
+.calendar__text__bot a{
+    color:  #167bc1;
+}
+.calendar__block{
+    width: 100%;
+    background-color: #fff;
+}
+.calendar__top2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 15px 15px;
+    border-bottom: 1px solid #dad9d9;
+}
+.calendar__top2 span{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.calendar__item__v{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0  15px;
+}
+
+.calendar__item.cal-buh{
+    font-size: 10px;
+}
+.calendar__item.cal-buh span{
+    font-size: 12px;
+}
+
+
+.calendar__item__v2{
+    flex: 1;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0 15px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.calendar__child{
+    border-bottom: 1px solid #dad9d9;
+    position: relative;
+    padding: 25px 0;
+}
+/* .calendar__child:last-child{
+    border-bottom: 0;
+} */
+.calendar-more-btn{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    background-color: transparent;
+    border: 0;
+    color: #167bc1;
+}
+.calendar-more-btn .calendar-more-btn2{
+    display: none;
+}
+.calendar-more-btn.active .calendar-more-btn1{
+    display: none;
+}
+.calendar-more-btn.active .calendar-more-btn2{
+    display: block;
+}
+.calendar__item__h__item{
+    padding: 20px 15px;
+    display: flex;
+}
+
+.calendar__item__h__name{
+    font-weight: 500;
+    margin-right: 10px;
+    flex: 0 0  100px;
+}
+.calendar__item__h__item p{
+    flex: 1;
+}
+.calendar__item__h__item p a{
+    color: #167bc1;
+    display: block;
+    margin-bottom: 7px;
+}
+.calendar__item__h{
+    display: none;
+}
+
+.calendar__list{
+    height: 505px;
+    overflow: auto;
+    padding-bottom: 25px;
+}
+
+.calendar__list::-webkit-scrollbar {
+    width: 5px;
+    padding-bottom: 10px;
+}
+
+/* Track */
+.calendar__list::-webkit-scrollbar-track {
+    background: #c1bfbf;
+}
+
+/* Handle */
+.calendar__list::-webkit-scrollbar-thumb {
+    background: #167bc1;
+}
+
+/* Handle on hover */
+.calendar__list::-webkit-scrollbar-thumb:hover {
+    background: #167bc1;
+}
+
+@media(max-width: 1199px){
+    .calendar--wrap{
+        flex-direction: column;
+    }
+    .calendra__table table{
+        max-width: 400px;
+    }
+    .calendar__top{
+        justify-content: flex-start;
+    }
+    .calendar__top .selectric-wrapper{
+        margin-right: 15px;
+    }
+    .calendar__text__bot{
+        margin-bottom: 25px;
+    }
+}
+.calendar__child.active .calendar__item__v2{
+    display: block;
+}
+.calendar__child.active .calendar__item__v{
+    margin-bottom: 25px;
+}
+@media(max-width: 559px){
+    .calendar__item__h__item{
+        flex-direction: column;
+    }
+    .calendar__item__h__name{
+        flex: auto;
+        margin-bottom: 15px;
+    }
+    .calendar__item__h__item{
+        padding: 10px 15px;
     }
 }

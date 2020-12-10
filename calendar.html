@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Laravel</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" crossorigin="anonymous">
+        <!-- libs -->
+        <link href="./css/selectric.css" rel="stylesheet">
+        <!-- Styles -->
+        <link href="./css/fancybox.css" rel="stylesheet">
+        <link href="./css/app.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="main">
+
+            <!-- sidebar -->
+            <div class="sidebar">
+                <div class="logo">
+                    <img src="./img/1c-logo.png">
+                </div>
+                <div class="vhod">
+                    <div class="login">
+                        <div>
+                            <img src="./img/user.png">
+                            <span>Личный кабинет</span>
+                        </div>
+                        <div class="vhod__text">
+                            <div class="vhod__dostup">Демонстративный доступ</div>
+                            Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает <a href="">сосредоточиться</a>. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона
+                        </div>
+                        <div class="vhod-btns">
+                            <a href="" class="vhod-btn1">Вход</a>
+                            <a href="" class="vhod-btn2">Регистрация</a>
+                        </div>
+                    </div>
+                </div>
+                <ul class="sidebar__menu">
+                   <li><a href=""><i class="fas fa-home"></i>Главная</a></li> 
+                   <li><a href=""><i class="fas fa-database"></i>Нормативная база</a></li> 
+                   <li><a href=""><i class="fas fa-donate"></i>Налоговоя система</a></li> 
+                   <li><a href=""><i class="fas fa-balance-scale-left"></i>Консультации и аналитика</a></li> 
+                   <li><a href=""><i class="fas fa-file-invoice"></i>Отчетность</a></li> 
+                   <li><a href=""><i class="fas fa-receipt"></i>Формы и бланки</a></li>
+                   <li><a href=""><i class="fas fa-book"></i>Справочники</a></li> 
+                </ul>
+
+                <ul class="sidebar__menu">
+                   <li><a href=""><i class="far fa-newspaper"></i>Новости</a></li> 
+                   <li><a href=""><i class="fab fa-leanpub"></i>Опубликовано на сайте</a></li> 
+                   <li><a href=""><i class="far fa-calendar-alt"></i>Календарь бухгалтера</a></li> 
+                   <li><a href=""><i class="fas fa-chart-line"></i>Курс валют ЦБР</a></li> 
+                   <li><a href=""><i class="fas fa-link"></i>Полезные ссылки</a></li> 
+                </ul>
+
+                <ul class="sidebar__menu">
+                   <li><a href=""><i class="fas fa-file-signature"></i>Пользовательськое соглашение</a></li> 
+                   <li><a href=""><i class="far fa-file-word"></i>Договор на оказание услуг</a></li> 
+                   <li><a href=""><i class="fas fa-file-invoice"></i>Публичный договор</a></li> 
+                </ul>
+            </div>
+            <!-- sidebar -->
+
+            <div class="w_content">
+                <div class="mob-top">
+                    <div class="burger">
+                        <i class="fas fa-bars burger-open"></i>
+                        <i class="fas fa-times burger-close"></i>
+                    </div>
+                    <div class="login">
+                        <a class="" href=""><span>Вход</span><img src="./img/user.png"></a>
+                    </div>
+                </div>
+                <div class="top-line">
+                    <div class="container-fluid">
+                        <div class="row">
+
+                            <div class="col-6">
+                                <ul class="top-line__menu">
+                                    <li><a href="">Помощь</a></li>
+                                    <li><a href="">Контакты</a></li>
+                                    
+                                </ul>
+                            </div>
+                            <div class="col-xl-3 col-4">
+                                <div class="spravka" >
+                                    <div>Справка - </div>
+                                    <div>
+                                        <a href="tel:0713301683">  071 330 16 83</a>
+                                        
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="col-xl-3 col-2">
+                                <div class="top-line__help">
+                                    <a href="mailto:testemail@gmail.com">testemail@gmail.com</a>
+                                    <button type="button" class="top-line__help__btn">Задать вопрос</button>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news otchet-d">
+                    
+                    <ul class="breadcrumb">
+                        <li><a href="">Главная</a></li>
+                        <li><a href="">Календарь бухгалтера</a></li>
+                    </ul>
+
+                </div>
+                <div class="otchet-d__wrap calendar--wrap">
+                    <div class="otchet-d__left">
+                        <div class="calendar__top">
+                            <select class="select">
+                                <option>Январь 2020</option>
+                                <option>Февраль 2020</option>
+                                <option>Март 2020</option>
+                                <option>Ноябрь 2020</option>
+                            </select>
+                            <select class="select">
+                                <option>Все события</option>
+                                <option>Событие 1</option>
+                                <option>Событие 2</option>
+                            </select>
+                        </div>
+                        <div class="calendra__table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <td>ПН</td>
+                                        <td>ВТ</td>
+                                        <td>СР</td>
+                                        <td>ЧТ</td>
+                                        <td>ПТ</td>
+                                        <td class="vihodnoi">СБ</td>
+                                        <td class="vihodnoi">НД</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td class="vihodnoi">01</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="link"><a href="">02</a></td>
+                                        <td>03</td>
+                                        <td>04</td>
+                                        <td>05</td>
+                                        <td>06</td>
+                                        <td class="vihodnoi">07</td>
+                                        <td class="vihodnoi">08</td>
+                                    </tr>
+                                    <tr>
+                                        <td>09</td>
+                                        <td>10</td>
+                                        <td>11</td>
+                                        <td>12</td>
+                                        <td>13</td>
+                                        <td class="vihodnoi">14</td>
+                                        <td class="vihodnoi">15</td>
+                                    </tr>
+                                    <tr>
+                                        <td>16</td>
+                                        <td>17</td>
+                                        <td class="link"><a href="">18</a></td>
+                                        <td>19</td>
+                                        <td>20</td>
+                                        <td class="vihodnoi">21</td>
+                                        <td class="vihodnoi">22</td>
+                                    </tr>
+                                    <tr>
+                                        <td>23</td>
+                                        <td>24</td>
+                                        <td>25</td>
+                                        <td class="link"><a href="">26</a></td>
+                                        <td>27</td>
+                                        <td class="vihodnoi">28</td>
+                                        <td class="vihodnoi">29</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="link"><a href="">30</a></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                                <tfoot></tfoot>
+                            </table>
+                        </div>
+                        <div class="calendar__text">
+                            <p>
+                                <span style="color: #ff0000;">Красный</span> - Выходные и празничные дни
+                            </p>
+                            <p>
+                                <span style="color: #167bc1;">Синий</span> - Выходные и празничные дни
+                            </p>
+                            <p>
+                                <b>П.С.У.*</b> - Последний срок оплаты налога, сбора и другого , платежа
+                            </p>
+                            <p>
+                                <b>П.С.У.*</b> - Последний срок оплаты налога, сбора и другого , платежа
+                            </p>
+                            <p>
+                                *Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas reprehenderit in explicabo, doloribus deleniti id voluptate enim error asperiores porro amet veniam iusto at ab?
+                            </p>
+                        </div>
+                        <div class="calendar__text__bot">
+                            См.также:<br>
+                            <a href="">Производственый календарь на 2020</a>
+                        </div>
+                    </div>
+                    <div class="otchet-d__right">
+                        <div class="calendar__block">
+                            <div class="calendar__top2">
+                                Календарь бухгалтера
+                                <span>События</span>
+                            </div>
+                            <div class="calendar__list">
+                                <div class="calendar__child">
+                                    <button type="button" class="calendar-more-btn">
+                                        <div class="calendar-more-btn1">открыть <i class="fas fa-chevron-down"></i></div>
+                                        <div class="calendar-more-btn2">Закрыть <i class="fas fa-chevron-up"></i></div>
+                                    </button>
+                                    <div class="calendar__item__v">
+                                        <div class="calendar__item this cal-buh">
+                                            <span>чт</span>
+                                            <span class="calendar-item__day">17</span>
+                                            НОЯ 20
+                                        </div>
+                                        <div class="calendar__item__v2">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, mollitia.
+                                        </div>
+                                        <div class="calendar__item__v3">
+                                            П.С.П.О
+                                        </div>
+                                    </div>
+                                    <div class="calendar__item__h">
+                                        <div class="calendar__item__h__row">
+                                            <div class="calendar__item__h__item">
+                                                <div class="calendar__item__h__name">Примечание</div>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, excepturi numquam temporibus ab iure tenetur quo ullam. Magni doloribus laborum deleniti voluptatibus incidunt eaque fugit.
+                                                </p>
+                                            </div>
+                                            <div class="calendar__item__h__item">
+                                                <div class="calendar__item__h__name">Основание</div>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, excepturi numquam temporibus ab iure tenetur quo ullam. Magni doloribus laborum deleniti voluptatibus incidunt eaque fugit.
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, excepturi numquam temporibus ab iure tenetur quo ullam. Magni doloribus laborum deleniti voluptatibus incidunt eaque fugit.
+                                                </p>
+                                            </div>
+                                            <div class="calendar__item__h__item">
+                                                <div class="calendar__item__h__name">Форма</div>
+                                                <p>
+                                                    <a href=""><i class="fas fa-file"></i> Lorem ipsum dolor sit amet.</a>
+                                                    <a href=""><i class="fas fa-file"></i> Lorem ipsum dolor sit amet.</a>
+                                                    <a href=""><i class="fas fa-file"></i> Lorem ipsum dolor sit amet.</a>
+                                                    <a href=""><i class="fas fa-file"></i> Lorem ipsum dolor sit amet.</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="calendar__child">
+                                    <button type="button" class="calendar-more-btn">
+                                        <div class="calendar-more-btn1">открыть <i class="fas fa-chevron-down"></i></div>
+                                        <div class="calendar-more-btn2">Закрыть <i class="fas fa-chevron-up"></i></div>
+                                    </button>
+                                    <div class="calendar__item__v">
+                                        <div class="calendar__item this cal-buh">
+                                            <span>чт</span>
+                                            <span class="calendar-item__day">17</span>
+                                            НОЯ 20
+                                        </div>
+                                        <div class="calendar__item__v2">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, mollitia.
+                                        </div>
+                                        <div class="calendar__item__v3">
+                                            П.С.П.О
+                                        </div>
+                                    </div>
+                                    <div class="calendar__item__h">
+                                        <div class="calendar__item__h__row">
+                                            <div class="calendar__item__h__item">
+                                                <div class="calendar__item__h__name">Примечание</div>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, excepturi numquam temporibus ab iure tenetur quo ullam. Magni doloribus laborum deleniti voluptatibus incidunt eaque fugit.
+                                                </p>
+                                            </div>
+                                            <div class="calendar__item__h__item">
+                                                <div class="calendar__item__h__name">Основание</div>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, excepturi numquam temporibus ab iure tenetur quo ullam. Magni doloribus laborum deleniti voluptatibus incidunt eaque fugit.
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, excepturi numquam temporibus ab iure tenetur quo ullam. Magni doloribus laborum deleniti voluptatibus incidunt eaque fugit.
+                                                </p>
+                                            </div>
+                                            <div class="calendar__item__h__item">
+                                                <div class="calendar__item__h__name">Форма</div>
+                                                <p>
+                                                    <a href=""><i class="fas fa-file"></i> Lorem ipsum dolor sit amet.</a>
+                                                    <a href=""><i class="fas fa-file"></i> Lorem ipsum dolor sit amet.</a>
+                                                    <a href=""><i class="fas fa-file"></i> Lorem ipsum dolor sit amet.</a>
+                                                    <a href=""><i class="fas fa-file"></i> Lorem ipsum dolor sit amet.</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="calendar__child">
+                                    <button type="button" class="calendar-more-btn">
+                                        <div class="calendar-more-btn1">открыть <i class="fas fa-chevron-down"></i></div>
+                                        <div class="calendar-more-btn2">Закрыть <i class="fas fa-chevron-up"></i></div>
+                                    </button>
+                                    <div class="calendar__item__v">
+                                        <div class="calendar__item this cal-buh">
+                                            <span>чт</span>
+                                            <span class="calendar-item__day">17</span>
+                                            НОЯ 20
+                                        </div>
+                                        <div class="calendar__item__v2">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </div>
+                                        <div class="calendar__item__v3">
+                                            П.С.П.О
+                                        </div>
+                                    </div>
+                                    <div class="calendar__item__h">
+                                        <div class="calendar__item__h__row">
+                                            <div class="calendar__item__h__item">
+                                                <div class="calendar__item__h__name">Примечание</div>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                </p>
+                                            </div>
+                                            <div class="calendar__item__h__item">
+                                                <div class="calendar__item__h__name">Основание</div>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, excepturi numquam temporibus ab iure tenetur quo ullam. Magni doloribus laborum deleniti voluptatibus incidunt eaque fugit.
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, excepturi numquam temporibus ab iure tenetur quo ullam. Magni doloribus laborum deleniti voluptatibus incidunt eaque fugit.
+                                                </p>
+                                            </div>
+                                            <div class="calendar__item__h__item">
+                                                <div class="calendar__item__h__name">Форма</div>
+                                                <p>
+                                                    <a href=""><i class="fas fa-file"></i> Lorem ipsum dolor sit amet.</a>
+                                                    <a href=""><i class="fas fa-file"></i> Lorem ipsum dolor sit amet.</a>
+                                                    <a href=""><i class="fas fa-file"></i> Lorem ipsum dolor sit amet.</a>
+                                                    <a href=""><i class="fas fa-file"></i> Lorem ipsum dolor sit amet.</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="calendar__child">
+                                    <button type="button" class="calendar-more-btn">
+                                        <div class="calendar-more-btn1">открыть <i class="fas fa-chevron-down"></i></div>
+                                        <div class="calendar-more-btn2">Закрыть <i class="fas fa-chevron-up"></i></div>
+                                    </button>
+                                    <div class="calendar__item__v">
+                                        <div class="calendar__item this cal-buh">
+                                            <span>чт</span>
+                                            <span class="calendar-item__day">17</span>
+                                            НОЯ 20
+                                        </div>
+                                        <div class="calendar__item__v2">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </div>
+                                        <div class="calendar__item__v3">
+                                            П.С.П.О
+                                        </div>
+                                    </div>
+                                    <div class="calendar__item__h">
+                                        <div class="calendar__item__h__row">
+                                            <div class="calendar__item__h__item">
+                                                <div class="calendar__item__h__name">Примечание</div>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                </p>
+                                            </div>
+                                            <div class="calendar__item__h__item">
+                                                <div class="calendar__item__h__name">Основание</div>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, excepturi numquam temporibus ab iure tenetur quo ullam. Magni doloribus laborum deleniti voluptatibus incidunt eaque fugit.
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, excepturi numquam temporibus ab iure tenetur quo ullam. Magni doloribus laborum deleniti voluptatibus incidunt eaque fugit.
+                                                </p>
+                                            </div>
+                                            <div class="calendar__item__h__item">
+                                                <div class="calendar__item__h__name">Форма</div>
+                                                <p>
+                                                    <a href=""><i class="fas fa-file"></i> Lorem ipsum dolor sit amet.</a>
+                                                    <a href=""><i class="fas fa-file"></i> Lorem ipsum dolor sit amet.</a>
+                                                    <a href=""><i class="fas fa-file"></i> Lorem ipsum dolor sit amet.</a>
+                                                    <a href=""><i class="fas fa-file"></i> Lorem ipsum dolor sit amet.</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="calendar__child">
+                                    <button type="button" class="calendar-more-btn">
+                                        <div class="calendar-more-btn1">открыть <i class="fas fa-chevron-down"></i></div>
+                                        <div class="calendar-more-btn2">Закрыть <i class="fas fa-chevron-up"></i></div>
+                                    </button>
+                                    <div class="calendar__item__v">
+                                        <div class="calendar__item this cal-buh">
+                                            <span>чт</span>
+                                            <span class="calendar-item__day">17</span>
+                                            НОЯ 20
+                                        </div>
+                                        <div class="calendar__item__v2">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </div>
+                                        <div class="calendar__item__v3">
+                                            П.С.П.О
+                                        </div>
+                                    </div>
+                                    <div class="calendar__item__h">
+                                        <div class="calendar__item__h__row">
+                                            <div class="calendar__item__h__item">
+                                                <div class="calendar__item__h__name">Примечание</div>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                </p>
+                                            </div>
+                                            <div class="calendar__item__h__item">
+                                                <div class="calendar__item__h__name">Основание</div>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, excepturi numquam temporibus ab iure tenetur quo ullam. Magni doloribus laborum deleniti voluptatibus incidunt eaque fugit.
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, excepturi numquam temporibus ab iure tenetur quo ullam. Magni doloribus laborum deleniti voluptatibus incidunt eaque fugit.
+                                                </p>
+                                            </div>
+                                            <div class="calendar__item__h__item">
+                                                <div class="calendar__item__h__name">Форма</div>
+                                                <p>
+                                                    <a href=""><i class="fas fa-file"></i> Lorem ipsum dolor sit amet.</a>
+                                                    <a href=""><i class="fas fa-file"></i> Lorem ipsum dolor sit amet.</a>
+                                                    <a href=""><i class="fas fa-file"></i> Lorem ipsum dolor sit amet.</a>
+                                                    <a href=""><i class="fas fa-file"></i> Lorem ipsum dolor sit amet.</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="calendar__child">
+                                    <button type="button" class="calendar-more-btn">
+                                        <div class="calendar-more-btn1">открыть <i class="fas fa-chevron-down"></i></div>
+                                        <div class="calendar-more-btn2">Закрыть <i class="fas fa-chevron-up"></i></div>
+                                    </button>
+                                    <div class="calendar__item__v">
+                                        <div class="calendar__item this cal-buh">
+                                            <span>чт</span>
+                                            <span class="calendar-item__day">17</span>
+                                            НОЯ 20
+                                        </div>
+                                        <div class="calendar__item__v2">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </div>
+                                        <div class="calendar__item__v3">
+                                            П.С.П.О
+                                        </div>
+                                    </div>
+                                    <div class="calendar__item__h">
+                                        <div class="calendar__item__h__row">
+                                            <div class="calendar__item__h__item">
+                                                <div class="calendar__item__h__name">Примечание</div>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                </p>
+                                            </div>
+                                            <div class="calendar__item__h__item">
+                                                <div class="calendar__item__h__name">Основание</div>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, excepturi numquam temporibus ab iure tenetur quo ullam. Magni doloribus laborum deleniti voluptatibus incidunt eaque fugit.
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, excepturi numquam temporibus ab iure tenetur quo ullam. Magni doloribus laborum deleniti voluptatibus incidunt eaque fugit.
+                                                </p>
+                                            </div>
+                                            <div class="calendar__item__h__item">
+                                                <div class="calendar__item__h__name">Форма</div>
+                                                <p>
+                                                    <a href=""><i class="fas fa-file"></i> Lorem ipsum dolor sit amet.</a>
+                                                    <a href=""><i class="fas fa-file"></i> Lorem ipsum dolor sit amet.</a>
+                                                    <a href=""><i class="fas fa-file"></i> Lorem ipsum dolor sit amet.</a>
+                                                    <a href=""><i class="fas fa-file"></i> Lorem ipsum dolor sit amet.</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="calendar__child">
+                                    <button type="button" class="calendar-more-btn">
+                                        <div class="calendar-more-btn1">открыть <i class="fas fa-chevron-down"></i></div>
+                                        <div class="calendar-more-btn2">Закрыть <i class="fas fa-chevron-up"></i></div>
+                                    </button>
+                                    <div class="calendar__item__v">
+                                        <div class="calendar__item this cal-buh">
+                                            <span>чт</span>
+                                            <span class="calendar-item__day">17</span>
+                                            НОЯ 20
+                                        </div>
+                                        <div class="calendar__item__v2">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </div>
+                                        <div class="calendar__item__v3">
+                                            П.С.П.О
+                                        </div>
+                                    </div>
+                                    <div class="calendar__item__h">
+                                        <div class="calendar__item__h__row">
+                                            <div class="calendar__item__h__item">
+                                                <div class="calendar__item__h__name">Примечание</div>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                </p>
+                                            </div>
+                                            <div class="calendar__item__h__item">
+                                                <div class="calendar__item__h__name">Основание</div>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, excepturi numquam temporibus ab iure tenetur quo ullam. Magni doloribus laborum deleniti voluptatibus incidunt eaque fugit.
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, excepturi numquam temporibus ab iure tenetur quo ullam. Magni doloribus laborum deleniti voluptatibus incidunt eaque fugit.
+                                                </p>
+                                            </div>
+                                            <div class="calendar__item__h__item">
+                                                <div class="calendar__item__h__name">Форма</div>
+                                                <p>
+                                                    <a href=""><i class="fas fa-file"></i> Lorem ipsum dolor sit amet.</a>
+                                                    <a href=""><i class="fas fa-file"></i> Lorem ipsum dolor sit amet.</a>
+                                                    <a href=""><i class="fas fa-file"></i> Lorem ipsum dolor sit amet.</a>
+                                                    <a href=""><i class="fas fa-file"></i> Lorem ipsum dolor sit amet.</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact">
+                            <div>Социальные сети</div>
+                            <div class="contact__wrap">
+                                <a href=""><img src="./img/vk.png"></a>
+                            </div>
+                            <p>© 2016-2020 "Главбух" Электроно информационое издание</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+            </div>
+
+        </div>
+
+    <!-- Script -->
+  
+    <script src="./js/jquery-3.2.1.js"></script>
+    <script src="./js/fancybox.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/selectric.min.js"></script>
+    <script src="./js/app.js"></script>
+    </body>
+</html>

@@ -91,4 +91,11 @@ $(function () {
         $('.js-usertype input').removeAttr('required') : $('.js-usertype input').attr('required', 'true');
         $('.js-usertype').slideToggle();
     });
+
+  // календарь
+  $('.calendar-more-btn').on('click', function(){
+    $(this).toggleClass('active')
+    $(this).closest('.calendar__child').toggleClass('active')
+    $(this).closest('.calendar__child').find('.calendar__item__h').slideToggle()
+  })
 });
