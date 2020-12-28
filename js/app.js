@@ -26,15 +26,19 @@ $(function () {
     $('.sidebar').slideToggle();
   });
 
-  $('.otchet__li__level1 span').click(function(){
-    if($(this).parent().hasClass('active') == 0){
-      $('.otchet__li__level1').removeClass('active')
-      $(this).parent().addClass('active')
+  $('.otchet__li__level1 > span').click(function(){
+   
+    
+    if($(this).closest('.otchet__li__level1').hasClass('active') == 0){
+      $(this).closest('ul').find('.otchet__li__level1').removeClass('active')
+      $(this).closest('.otchet__li__level1').addClass('active')
     }
     else{
-      $(this).parent().removeClass('active')
+      $(this).closest('.otchet__li__level1').removeClass('active')
     }
   })
+
+
 
   $('.itemfor').click(function(){
     let $itemId = $(this).attr('data-for')

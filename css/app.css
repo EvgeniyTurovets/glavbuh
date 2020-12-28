@@ -5804,28 +5804,33 @@ a:focus {
     flex: 1;
 }
 
-.otchet__li__level1 ul {
+.otchet__li__level1 > ul {
     display: none;
 }
 
+.otchet__li__level1 ul .otchet__li__level1{
+    padding-left: 14px;
+}
 .otchet__li__level1 .fa-minus-square {
     display: none;
 }
-
+.otchet__li__level2.otchet__li__level2--item{
+    flex-direction: column;
+}
 .otchet__li__level1 {
     margin-bottom: 18px;
 }
 
-.otchet__li__level1.active ul {
+.otchet__li__level1.active > ul {
     display: block;
     margin: 15px 0;
 }
 
-.otchet__li__level1.active .fa-minus-square {
+.otchet__li__level1.active > span .fa-minus-square {
     display: inline-block;
 }
 
-.otchet__li__level1.active .fa-plus-square {
+.otchet__li__level1.active > span .fa-plus-square {
     display: none;
 }
 
