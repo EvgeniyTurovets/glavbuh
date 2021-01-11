@@ -5925,6 +5925,7 @@ a:focus {
     margin: 0px;
     padding: 18px 15px;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .tabs ul li {
@@ -5936,19 +5937,19 @@ a:focus {
     text-align: center;
 }
 
-.tabs ul li a {
+.tabs ul li {
     padding: 10px 0px;
     display: block;
     border: 1px solid #f2f2f2;
 }
 
-.tabs ul li a:hover {
+
+.tabs ul li.active{
     background: #167bc1;
     border: 1px solid #167bc1;
     color: #fff;
     text-decoration: none;
 }
-
 .tabs>div {
     margin-top: 25px;
     border-top: 1px solid #f7f4f4;
