@@ -111,6 +111,27 @@ $(function () {
     $(this).closest('.calendar__child').find('.calendar__item__h').slideToggle()
   })
 
+  $('.spoiler-body').hide(300);
+  $('.spoiler-wrap.active .spoiler-body').show(300);
+	$(document).on('click','.spoiler-head',function (e) {
+		e.preventDefault()
+		$(this).parents('.spoiler-wrap').toggleClass("active").find('.spoiler-body').slideToggle();
+	})
 
+  $('.norm-select__top').on('click', function(){
+    $('.norm-select').toggleClass('active')
+  })
 
+  $(document).mouseup(function (e){ // событие клика по веб-документу
+		var div = $(".norm-select"); // тут указываем ID элемента
+		if (!div.is(e.target) // если клик был не по нашему блоку
+		    && div.has(e.target).length === 0) { // и не по его дочерним элементам
+        $('.norm-select').removeClass('active')
+		}
+  });
+  
+  $('.norm-select__bot li').on('click', function(){
+    $('.norm-select__top .norm-select-data').text($(this).text())
+    $('.norm-select').toggleClass('active')
+  })
 });
