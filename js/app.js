@@ -134,4 +134,12 @@ $(function () {
     $('.norm-select__top .norm-select-data').text($(this).text())
     $('.norm-select').toggleClass('active')
   })
+
+
+  $('.arhiv-select select').on('change', function(){
+    
+    console.log($(this).val())
+    $('.arhiv__wrap').hide().removeClass('active')
+    $('#' + $(this).val()).fadeIn().addClass('active')
+  })
 });

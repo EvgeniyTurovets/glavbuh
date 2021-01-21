@@ -6242,13 +6242,15 @@ a:focus {
 }
 
 .arhiv__wrap {
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     margin: 0 -7px;
     padding: 0 15px;
     margin-top: 15px;
 }
-
+.arhiv__wrap.active{
+    display: flex!important;
+}
 .arhiv__item {
     width: calc(100% / 3 - 14px);
     margin: 0 7px;
