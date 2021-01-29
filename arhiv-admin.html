@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Laravel</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" crossorigin="anonymous">
+        <!-- libs -->
+        <link href="./css/selectric.css" rel="stylesheet">
+        <!-- Styles -->
+        <link href="./css/app.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="main">
+
+            <!-- sidebar -->
+            <div class="sidebar">
+                <div class="logo">
+                    <img src="./img/1c-logo.png">
+                </div>
+                <div class="vhod">
+                    <div class="login">
+                        <div>
+                            <img src="./img/user.png">
+                            <span>Личный кабинет</span>
+                        </div>
+                        <div class="vhod__text">
+                            <div class="vhod__dostup">Демонстративный доступ</div>
+                            Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает <a href="">сосредоточиться</a>. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона
+                        </div>
+                        <div class="vhod-btns">
+                            <a href="" class="vhod-btn1">Вход</a>
+                            <a href="" class="vhod-btn2">Регистрация</a>
+                        </div>
+                    </div>
+                </div>
+                <ul class="sidebar__menu">
+                   <li><a href=""><i class="fas fa-home"></i>Главная</a></li> 
+                   <li><a href=""><i class="fas fa-database"></i>Нормативная база</a></li> 
+                   <li><a href=""><i class="fas fa-donate"></i>Налоговоя система</a></li> 
+                   <li><a href=""><i class="fas fa-balance-scale-left"></i>Консультации и аналитика</a></li> 
+                   <li><a href=""><i class="fas fa-file-invoice"></i>Отчетность</a></li> 
+                   <li><a href=""><i class="fas fa-receipt"></i>Формы и бланки</a></li>
+                   <li><a href=""><i class="fas fa-book"></i>Справочники</a></li> 
+                </ul>
+
+                <ul class="sidebar__menu">
+                   <li><a href=""><i class="far fa-newspaper"></i>Новости</a></li> 
+                   <li><a href=""><i class="fab fa-leanpub"></i>Опубликовано на сайте</a></li> 
+                   <li><a href=""><i class="far fa-calendar-alt"></i>Календарь бухгалтера</a></li> 
+                   <li><a href=""><i class="fas fa-chart-line"></i>Курс валют ЦБР</a></li> 
+                   <li><a href=""><i class="fas fa-link"></i>Полезные ссылки</a></li> 
+                </ul>
+
+                <ul class="sidebar__menu">
+                   <li><a href=""><i class="fas fa-file-signature"></i>Пользовательськое соглашение</a></li> 
+                   <li><a href=""><i class="far fa-file-word"></i>Договор на оказание услуг</a></li> 
+                   <li><a href=""><i class="fas fa-file-invoice"></i>Публичный договор</a></li> 
+                </ul>
+            </div>
+            <!-- sidebar -->
+
+            <div class="w_content">
+                <div class="mob-top">
+                    <div class="burger">
+                        <i class="fas fa-bars burger-open"></i>
+                        <i class="fas fa-times burger-close"></i>
+                    </div>
+                    <div class="login">
+                        <a class="" href=""><span>Вход</span><img src="./img/user.png"></a>
+                    </div>
+                </div>
+                <div class="top-line">
+                    <div class="container-fluid">
+                        <div class="row">
+
+                            <div class="col-6">
+                                <ul class="top-line__menu">
+                                    <li><a href="">Помощь</a></li>
+                                    <li><a href="">Контакты</a></li>
+                                    
+                                </ul>
+                            </div>
+                            <div class="col-xl-3 col-4">
+                                <div class="spravka" >
+                                    <div>Справка - </div>
+                                    <div>
+                                        <a href="tel:0713301683">  071 330 16 83</a>
+                                        
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="col-xl-3 col-2">
+                                <div class="top-line__help">
+                                    <a href="mailto:testemail@gmail.com">testemail@gmail.com</a>
+                                    <button type="button" class="top-line__help__btn">Задать вопрос</button>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news otchet">
+                    
+                    <ul class="breadcrumb">
+                        <li><a href="">Главная</a></li>
+                        <li><a href="">Нормативаня база</a></li>
+                        <li><a href="">Указы</a></li>
+                        <li><a>Архив</a></li>
+                    </ul>
+                    <div class="blocktitle">АРХИВ ВАЛЮТ</div>
+                    <div class="arhiv arhiv-admin">
+                        <div class="arhiv-admin-wrap">
+                            <form class="arhiv-select">
+                                <select class="select">
+                                    <option value="arhivw1">Сентябрь 2020</option>
+                                    <option value="arhivw2">Октябрь 2020</option>
+                                    <option value="arhivw3">Декабрь 2020</option>
+                                    <option value="arhivw4">Февраль 2020</option>
+                                </select>
+                            </form>
+                            <div id="reload-info" class="contact-susses info-label">
+                                Данные обновлены
+                            </div>
+                            <div id="add-info" class="contact-susses info-label">
+                                Запись добавлена
+                            </div>
+                            <form class="form-today">
+                                <label>USD</label>
+                                <input placeholder="00.00" class="form-control" type="number">
+                                <label>UAH</label>
+                                <input placeholder="00.00" class="form-control" type="number">
+                                <label>EUR</label>
+                                <input placeholder="00.00" class="form-control" type="number">
+                                <button class="btn-primary" type="button">Добавить на сегодня</button>
+                            </form>
+                        </div>
+                        
+                        <div id="arhivw1" class="arhiv__wrap active">
+                            <div class="arhiv__item">
+                                <div class="arhiv__item__top">30.09.2020</div>
+                                <div class="arhiv__item__bot">
+                                    <form class="form-today2">
+                                        <label>USD</label>
+                                        <input placeholder="00.00" class="form-control" type="number">
+                                        <label>UAH</label>
+                                        <input placeholder="00.00" class="form-control" type="number">
+                                        <label>EUR</label>
+                                        <input placeholder="00.00" class="form-control" type="number">
+                                        <div class="form-today2-wrap">
+                                            <button class="btn-primary" type="button">Изменить</button>
+                                            <button class="btn-danger" type="button">Удалить</button>
+                                        </div>
+                                        
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact">
+                    <div>Социальные сети</div>
+                    <div class="contact__wrap">
+                        <a href=""><img src="./img/vk.png"></a>
+                    </div>
+                    <p>© 2016-2020 "Главбух" Электроно информационое издание</p>
+                </div>
+            </div>
+
+        </div>
+        
+
+    <!-- Script -->
+    <script src="./js/jquery-3.2.1.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/selectric.min.js"></script>
+    <script src="./js/app.js"></script>
+    </body>
+
+
+    <script>
+        $('.form-today2 .btn-primary').on('click', function(){
+            $('#add-info').fadeIn()
+            setTimeout(function(){
+                $('#add-info').fadeOut()
+            }, 5000)
+        })
+        $('.form-today .btn-primary').on('click', function(){
+            $('#reload-info').fadeIn()
+            setTimeout(function(){
+                $('#reload-info').fadeOut()
+            }, 5000)
+        })
+    </script>
+</html>
